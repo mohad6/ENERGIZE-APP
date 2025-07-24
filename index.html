@@ -9,10 +9,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Fitness App</title>
 </head>
 <body>
+    <section class="header-section">
   <nav class="navbar">
     <div>
       <div class="logo-container">
@@ -38,24 +40,25 @@
       <a href="#">Home</a>
       <a href="#">About Us</a>
       <a href="#">Blog</a>
-      <button><span>👤</span>Log In</button>
+      <button class="btn-login"><span>👤</span>Log In</button>
     </div>
   </div>
+  </section>
 
   <!-- Hero Section -->
   <section class="hero-section">
-    <div class="hero-wrapper">
+    <div class="hero-content">
       <div class="hero-text">
-        <h1>Transform Your Fitness Journey. Start Today!</h1>
-        <p>Track workouts, monitor progress, and achieve your goals with our all-in-one fitness app.</p>
+        <h1 class="hero-title">Transform Your Fitness Journey. Start Today!</h1>
+        <p class="hero-subtitle">Track workouts, monitor progress, and achieve your goals with our all-in-one fitness app.</p>
         <div class="hero-buttons">
-          <button class="btn-primary">Get Started</button>
-          <button class="btn-secondary"><img width="20" height="20" src="https://img.icons8.com/fluency-systems-regular/48/dumbbell.png" alt="dumbbell"/>Book a demo</button>
+          <button class="get-started-btn">Get Started</button>
+          <button class="book-a-demo-btn"><i class="fa-sharp-duotone fa-solid fa-dumbbell"></i>Book a demo</button>
         </div>
       </div>
     </div>
     <div class="hero-image">
-      <img src="img/hero-bg-mobile.png" alt="preview 1">
+      <img src="img/hero-bg-mobile.png" alt="preview 1" class="hero-bg">
     </div>
   </section>
 
