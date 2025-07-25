@@ -1,4 +1,9 @@
 /* Container setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   color: #1f2937; /* gray-800 */
   font-family: 'Poppins', sans-serif;
@@ -91,6 +96,16 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+  z-index: 70;
+}
+.menu-btn i {
+  color: #1f2937; 
+  font-size: 1.7rem;
+  
+}
+.menu-btn:active {
+    transform: scale(0.95);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
@@ -118,6 +133,7 @@ body {
 }
 
 .mobile-menu .menu-items {
+    margin-top: 50px;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -125,26 +141,30 @@ body {
 }
 
 .mobile-menu a {
+    margin-top: 0.8rem;
   font-size: 1.125rem;
   font-weight: 500;
   text-decoration: none;
   color: black;
 }
 
-.mobile-menu a:hover {
+/* .mobile-menu a:hover {
   color: #2563eb;
-}
+} */
 
-.mobile-menu button {
-  background-color: #f3f4f6;
-  padding: 0.5rem 1rem;
-  max-width: 6rem;
-  border-radius: 0.375rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  border: none;
-  cursor: pointer;
+.mobile-menu .btn-login {
+    background-color: #f3f4f6;
+    padding: 0.7rem 1rem;
+    border-radius: 0.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 100%; /* Make button wider horizontally */
+    max-width: 14rem; /* Optional: limit max width */
 }
 
 @media (min-width: 768px) {
@@ -238,7 +258,7 @@ body {
   }
 }
 
-.hero-buttons {
+.hero-btns {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -246,7 +266,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .hero-buttons {
+  .hero-btns {
     flex-direction: row;
     align-items: flex-start;
     gap: 1rem;
@@ -466,7 +486,7 @@ body {
 
 /* Role */
 .testimonial-role {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* Responsive styles */
@@ -495,29 +515,25 @@ body {
 }
 
 /* Reset basic styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 
 body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Section layout */
+/* Pricing Section */
 .pricing-section {
   padding: 3rem 1rem;
   text-align: center;
   background: #fff;
 }
 
-.pricing-header h2 {
+.pricing-header .pricing-title{
   font-size: 2.5rem;
   margin-bottom: 1.8rem;
 }
 
-.pricing-header p {
+.pricing-header .pricing-subtitle {
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 2rem;
@@ -550,12 +566,12 @@ body {
   text-align: left;
 }
 
-.pricing-card h3 {
+.pricing-card .basic {
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 
-.plan-desc {
+.plan-preview {
   font-size: 0.95rem;
   color: #262424cc;
   margin-bottom: 1rem;
@@ -583,17 +599,15 @@ body {
 .features li {
   margin-bottom: 0.6rem;
   display: flex;
-  align-items: center;
   font-size: 0.95rem;
 }
-
-.features span.material-symbols-outlined {
-  font-size: 1.2rem;
-  margin-right: 0.5rem;
+.features i{
+font-size: 1rem;
+margin: 0 5px 0 0;
+padding:0;
 }
-
 /* Buttons */
-.cta-button {
+.price-btn{
   display: inline-block;
   width: 100%;
   background-color: #3b82f6;
@@ -607,7 +621,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.cta-button:hover {
+.price-btn:hover {
   background-color: #2563eb;
 }
 
@@ -617,7 +631,7 @@ body {
   color: #fff;
 }
 
-.plan-desc1 {
+.plan-preview2 {
   font-size: 0.95rem;
   color: #d8d3d3cc;
   margin-bottom: 1rem;
@@ -642,7 +656,7 @@ body {
 }
 
 /* Footer note */
-.pricing-note {
+.payment-notes {
   font-size: 1rem;
   color: #666;
   margin-top: 2rem;
@@ -660,7 +674,7 @@ body {
   padding: 0 0.25rem;
 }
 
-.faq-heading {
+.faq-head {
   font-size: 1.875rem; 
   font-weight: 300;     
   text-align: center;
@@ -669,7 +683,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .faq-heading {
+  .faq-head {
     font-size: 2.25rem;
   }
 }
@@ -687,7 +701,7 @@ body {
 }
 
 .faq-category {
-  padding: 0.5rem 1.25rem;
+  padding: 0.5rem 1.1rem;
   border-radius: 0.375rem;
   cursor: pointer;
 }

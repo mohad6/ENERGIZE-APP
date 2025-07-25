@@ -24,13 +24,13 @@
       </div>
     </div>
     <!-- Hamburger Button -->
-    <button id="menu-btn" type="button" class="menu-btn">&#9776;</button>
+    <button id="menu-btn" type="button" class="menu-btn" aria-label="Open menu"><i class="fa-sharp fa-solid fa-bars"></i></button>
 
     <ul class="nav-links">
       <li><a href="#">Home</a></li>
       <li><a href="#">About Us</a></li>
       <li><a href="#">Blog</a></li>
-      <li><button><span><i class="bi bi-person-fill"></i></span>Log In</button></li>
+      <li class="login"><button><span><i class="fa-solid fa-user"></i></span>Log In</button></li>
     </ul>
   </nav>
 
@@ -40,7 +40,7 @@
       <a href="#">Home</a>
       <a href="#">About Us</a>
       <a href="#">Blog</a>
-      <button class="btn-login"><span>👤</span>Log In</button>
+      <button class="btn-login"><span><i class="fa-solid fa-user"></i></span>Log In</button>
     </div>
   </div>
   </section>
@@ -51,7 +51,7 @@
       <div class="hero-text">
         <h1 class="hero-title">Transform Your Fitness Journey. Start Today!</h1>
         <p class="hero-subtitle">Track workouts, monitor progress, and achieve your goals with our all-in-one fitness app.</p>
-        <div class="hero-buttons">
+        <div class="hero-btns">
           <button class="get-started-btn">Get Started</button>
           <button class="book-a-demo-btn"><i class="fa-sharp-duotone fa-solid fa-dumbbell"></i>Book a demo</button>
         </div>
@@ -99,7 +99,7 @@
         <div class="testimonial-card">
           <p class="testimonial-text">"This app has changed my fitness routine completely. I love the community support and challenges!"</p>
           <p class="testimonial-author">Sarah Parker</p>
-          <p class="testimonial-text">Fitness Enthusiast</p>
+          <p class="testimonial-role">Fitness Enthusiast</p>
         </div>
       </div>
     </div>
@@ -108,52 +108,52 @@
   <!-- Pricing Section -->
   <section class="pricing-section">
     <div class="pricing-header">
-      <h2>Pricing</h2>
-      <p>Start with our free plans and unlock premium plans as you grow.</p>
+      <h2 class="pricing-title">Pricing</h2>
+      <p class="pricing-subtitle">Start with our free plans and unlock premium plans as you grow.</p>
     </div>
     <div class="pricing-container">
       <div class="pricing-card basic">
-        <h3>Basic</h3>
-        <p class="plan-desc">Ideal for beginners to track workout and monitor progress</p>
+        <h3 class="basic">Basic</h3>
+        <p class="plan-preview">Ideal for beginners to track workout and monitor progress</p>
         <p class="price">
           <span>Free</span>
           <span class="note">*no credit card needed</span>
         </p><hr>
         <ul class="features">
-          <li><span class="material-symbols-outlined" style="color: #888;">check</span>Customizable workout plans</li>
-          <li><span class="material-symbols-outlined" style="color: #888;">check</span>Track daily progress</li>
-          <li><span class="material-symbols-outlined" style="color: #888;">check</span>Nutrition tracker</li>
-          <li><span class="material-symbols-outlined" style="color: #888;">check</span>24-hour support response time</li>
+          <li><span><i class="fa-solid fa-check"></i></span>Customizable workout plans</li>
+          <li><span><i class="fa-solid fa-check"></i></span>Track daily progress</li>
+          <li><span><i class="fa-solid fa-check"></i></span>Nutrition tracker</li>
+          <li><span><i class="fa-solid fa-check"></i></span>24-hour support response time</li>
         </ul>
         <a href="#">
-          <button class="cta-button">Get Started today</button>
+          <button class="price-btn">Get Started today</button>
         </a>
       </div>
 
       <div class="pricing-card pro">
         <h3>Pro</h3>
-        <p class="plan-desc1">Everything in the basic plan plus advanced features for serious athletes.</p>
+        <p class="plan-preview2">Everything in the basic plan plus advanced features for serious athletes.</p>
         <p class="price">
           <span>$29</span>
           <span class="note">/month</span>
         </p><hr>
         <ul class="features">
-          <li><span class="material-symbols-outlined" style="color: #888;">check</span>Personalized coaching</li>
-          <li><span class="material-symbols-outlined" style="color: #888;">check</span>Advanced analytics</li>
-          <li><span class="material-symbols-outlined" style="color: #888;">check</span>Offline access</li>
+          <li><span><i class="fa-solid fa-check"></i></span>Personalized coaching</li>
+          <li><span><i class="fa-solid fa-check"></i></span>Advanced analytics</li>
+          <li><span><i class="fa-solid fa-check"></i></span>Offline access</li>
         </ul>
         <a href="#">
-          <button class="cta-button">Get Started today</button>
+          <button class="price-btn">Get Started today</button>
         </a>
       </div>
     </div>
-    <p class="pricing-note">All prices are in USD and charged per month with applicable taxes added at checkout.</p>
+    <p class="payment-notes">All prices are in USD and charged per month with applicable taxes added at checkout.</p>
   </section>
 
   <!-- FAQ Section -->
   <section class="faq-section">
     <div class="faq-container">
-      <h3 class="faq-heading">Frequently Asked Questions</h3>
+      <h3 class="faq-head">Frequently Asked Questions</h3>
       <ul class="faq-categories">
         <li class="faq-category active">All</li>
         <li class="faq-category">Getting Started</li>
