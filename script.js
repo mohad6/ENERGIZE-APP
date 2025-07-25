@@ -28,11 +28,11 @@ function toggleFAQ(button) {
   document
     .querySelectorAll(".faq-answer")
     .forEach((c) => c.classList.remove("active"));
-  document.querySelectorAll(".faq-icon").forEach((i) => (i.textContent = "+"));
+  document.querySelectorAll(".faq-icon").forEach((i) => (i.textContent = "➕"));
 
   // Open if closed
   if (!isOpen) {
     content.classList.add("active");
-    icon.textContent = "-";
+    icon.textContent = "➖";
   }
 }
