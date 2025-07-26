@@ -18,11 +18,13 @@ document.addEventListener("click", (event) => {
   }
 });
 
+
 // Add functionality to FAQ categories
 function toggleFAQ(button) {
   const content = button.nextElementSibling;
   const icon = button.querySelector("span:last-child");
   const isOpen = content.classList.contains("active");
+  
 
   // Close after open
   document
